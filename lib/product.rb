@@ -7,6 +7,10 @@ class Product
     @amount = params[:amount]
   end
 
+  def self.from_file(file_path)
+    raise NotImplementedError
+  end
+
   def to_s
     "#{@price} руб. (осталось #{@amount})"
   end
