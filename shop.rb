@@ -16,4 +16,5 @@ products << Game.new(
 )
 
 puts "У нас есть такие товары:"
+puts
 products.each { |product| puts product }

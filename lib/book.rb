@@ -9,8 +9,8 @@ class Book < Product
     @author = params[:author]
   end
 
-  def info
-    puts "Книга: \"#{@title}\", #{@genre}, #{@author}, #{super}"
+  def to_s
+    "Книга: \"#{@title}\", #{@genre}, #{@author}, #{super}"
   end
 
 end

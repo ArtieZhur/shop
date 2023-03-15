@@ -9,8 +9,8 @@ class Game < Product
     @editor = params[:editor]
   end
 
-  def info
-    puts "Игра: \"#{@title}\", #{@year}, #{@editor}, #{super}"
+  def to_s
+    "Игра: \"#{@title}\", #{@year}, #{@editor}, #{super}"
   end
 
 end

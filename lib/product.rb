@@ -7,8 +7,8 @@ class Product
     @amount = params[:amount]
   end
 
-  def info
-    puts "#{@price} руб. (осталось #{@amount})"
+  def to_s
+    "#{@price} руб. (осталось #{@amount})"
   end
 
 end
